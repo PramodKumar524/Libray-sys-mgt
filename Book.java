@@ -1,4 +1,4 @@
-package LiBRARY_MANAGEMENT;
+package LIBRARY_MANAGEMENT;
 
 class Book {
     private String title;

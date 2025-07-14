@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 public class LibraryManagementSystem {
@@ -16,7 +14,7 @@ public class LibraryManagementSystem {
             System.out.println("4. Return Book");
             System.out.println("5. Exit");
             System.out.print("Choice: ");
-            
+
             String input = sc.nextLine();
             if (input.matches("[1-5]")) {
                 choice = Integer.parseInt(input);
@@ -31,23 +29,11 @@ public class LibraryManagementSystem {
                     String title = sc.nextLine();
                     System.out.print("Enter Author Name: ");
                     String author = sc.nextLine();
-                    library.addBook(title, author);
+                    library.addBook(new Book(title, author));
                     break;
                 case 2:
                     library.showBooks();
-                    break;class Student {
-                        private String name;
-                        private String id;
-
-                        public Student(String name, String id) {
-                            this.name = name;
-                            this.id = id;
-                        }
-
-                        public String getDetails() {
-                            return "Issued by " + name + " (ID: " + id + ")";
-                        }
-                    }
+                    break;
                 case 3:
                     System.out.print("Enter Book Title to Issue: ");
                     String issueTitle = sc.nextLine();
@@ -68,7 +54,6 @@ public class LibraryManagementSystem {
                     break;
             }
         }
-
-       
+        sc.close();
     }
 }
