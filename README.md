@@ -1,13 +1,9 @@
-# Libray-sys-mgt
-program 
-output of the projevt visible on 
-https://replit.com/@PramodKumar524/Libray-sys-mgt
-
-
 # 📚 Library Management System (OOPs Based)
 
 This is a simple **Library Management System** project built using **Core Java & Object-Oriented Programming (OOPs)** concepts.  
 The project demonstrates how to structure different classes inside a **single package** and work together to represent a real-world library scenario.
+
+<img width="616" height="581" alt="Screenshot 2025-10-24 210854" src="https://github.com/user-attachments/assets/a70bf69f-f99a-468b-8a16-820a3ee9d703" />
 
 ---
 
