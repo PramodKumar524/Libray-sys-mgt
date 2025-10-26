@@ -1,41 +1,23 @@
-package LIBRARY_MANAGEMENT;
+package library;
 
-class Book {
-    private String title;
-    private String author;
-    private boolean isIssued;
-    private Student issuedTo; 
+public class Book {
+    private Title title;
+    private Author author;
+    private Availability availability;
+    private Price price;
 
-    public Book(String title, String author) {
+    public Book(Title title, Author author, Availability availability, Price price) {
         this.title = title;
         this.author = author;
-        this.isIssued = false;
-        this.issuedTo = null;
+        this.availability = availability;
+        this.price = price;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public boolean isIssued() {
-        return isIssued;
-    }
-
-    public void issue(Student student) {
-        isIssued = true;
-        issuedTo = student;
-    }
-
-    public void returnBook() {
-        isIssued = false;
-        issuedTo = null;
-    }
-
-    @Override
-    public String toString() {
-        if (isIssued) {
-            return title + " by " + author + " (Issued) - " + issuedTo.getDetails();
-        }
-        return title + " by " + author + " (Available)";
+    public void displayBookDetails() {
+        System.out.println("Title     : " + title.getName());
+        System.out.println("Author    : " + author.getAuthorName());
+        System.out.println("Available : " + (availability.isAvailable() ? "Yes" : "No"));
+        System.out.println("Price     : ₹" + price.getAmount());
+        System.out.println("-----------------------------------");
     }
 }
