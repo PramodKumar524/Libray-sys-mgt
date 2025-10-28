@@ -54,10 +54,10 @@ src/
 ---
 
 ## ✅ Sample Output
-Title : Java Programming
-Author : John Doe
-Available : Yes
-Price : ₹450
+Title : Java Programming<br>
+Author : John Doe<br>
+Available : Yes<br>
+Price : ₹450<br>
 Title : Data Structures
 Author : Mark Smith
 Available : No
